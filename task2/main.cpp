@@ -4,11 +4,10 @@
 using namespace std;
 
 int main(int argc, char** argv) {
-	int sum = 0;
-	for(int i = 0; i <= atoi(argv[1]); i++)
-		sum += i * atoi(argv[2]);
-	
-	cout << sum;
+	int N = atoi(argv[1]); 			 // amount of spans
+	int d = atoi(argv[2]); 			 // distance between
+	cout << (N*N + N)/2 * d << endl; // total length
+	// arythmetic progression
 
 	return 0;
 }
